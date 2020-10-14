@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.App {
+  text-align: left;
+  padding: 20px;
+}
+
+// App header and navigation
+.App-header {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  padding-left: 20px;
+  padding-right: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.Nav {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+}
+
+.Nav-item {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.NavLink {
+  text-decoration: none;
+  font-size: 20px;
+  color: currentColor;
+}
+
+.NavLink--active {
+  color: orange;
+}
+
+// button go back
+.buttonGoBack {
+  background-color: orange;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 10px;
+  opacity: 0.7;
+}
+.buttonGoBack:hover {
+  opacity: 1;
+}
+
+// Movie Details
+
+.movieDetails {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.imgMoviePoster {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.movieDescription {
+  max-width: 600px;
+}
+.GenreList {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.GenreItem {
+  list-style: none;
+}
+
+.GenreItemText {
+  margin-right: 10px;
+  padding: 3px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+.AddInfoSection {
+  border-bottom: 1px solid #ccc;
+}
+.AddInfoTitle {
+  text-align: center;
+}
+.AddInfoList {
+  display: flex;
+
+  justify-content: center;
+}
+.AddInfoItem {
+  list-style: none;
+  margin-right: 10px;
+}

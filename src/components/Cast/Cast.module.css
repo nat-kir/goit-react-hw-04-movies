@@ -1,0 +1,24 @@
+.ProfileList {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.CastListItem {
+  list-style: none;
+  width: 200px;
+  margin: 10px 0px;
+}
+
+.CastName {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.CastCharacter {
+  font-style: italic;
+  text-align: center;
+  color: rgb(94, 94, 94);
+  margin: 0;
+}
