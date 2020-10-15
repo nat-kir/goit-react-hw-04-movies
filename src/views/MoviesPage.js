@@ -26,9 +26,8 @@ class MoviesPage extends Component {
 
   async fetchMovies() {
     const { searchQuery } = this.state;
-    moviesApi
-      .getSearchMovies(searchQuery)
-      .then(movies => this.setState({ movies: movies }));
+    const movies = await moviesApi.getSearchMovies(searchQuery);
+    this.setState({ movies: movies });
   }
 
   onChangeQuery = query => {

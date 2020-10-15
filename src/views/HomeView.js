@@ -6,10 +6,11 @@ class HomeView extends Component {
   state = {
     movies: [],
   };
-  componentDidMount() {
-    moviesApi
-      .getTrendingMovies()
-      .then(movies => this.setState({ movies: movies }));
+
+  async componentDidMount() {
+    const movies = await moviesApi.getTrendingMovies();
+
+    this.setState({ movies: movies });
   }
 
   componentWillUnmount() {

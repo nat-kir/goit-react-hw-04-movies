@@ -13,9 +13,8 @@ class MovieDetailsPage extends Component {
 
   async componentDidMount() {
     const movieId = this.props.match.params.movieId;
-    moviesApi
-      .getMovieDetails(movieId)
-      .then(movieDetails => this.setState({ movieDetails: movieDetails }));
+    const movieDetails = await moviesApi.getMovieDetails(movieId);
+    this.setState({ movieDetails: movieDetails });
   }
 
   handleGoBack = () => {
